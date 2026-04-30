@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+template <typename T>
+T subtract(T a, T b) {
+    return a - b;
+}
+
+int main() {
+    cout << subtract(10, 4) << endl;
+    cout << subtract(5.5, 2.2) << endl;
+}

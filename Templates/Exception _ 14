@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 5, b = 0;
+
+    try {
+        if (b == 0)
+            throw "Cannot divide by zero";
+        cout << a / b;
+    }
+    catch(const char* msg) {
+        cout << msg;
+    }
+}

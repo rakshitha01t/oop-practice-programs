@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+template <class T>
+class Add {
+    T a, b;
+public:
+    void set(T x, T y) {
+        a = x;
+        b = y;
+    }
+    void show() {
+        cout << a + b;
+    }
+};
+
+int main() {
+    Add<int> obj;
+    obj.set(5, 10);
+    obj.show();
+
+    return 0;
+}

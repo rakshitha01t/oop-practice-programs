@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+template <typename T>
+T addArray(T arr[], int size) {
+    T sum = 0;
+    for(int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+int main() {
+    int intArr[] = {1, 2, 3, 4, 5};
+    int intSize = 5;
+
+    double doubleArr[] = {1.1, 2.5, 3.3, 4.4};
+    int doubleSize = 4;
+    cout << "Sum of integer array: " << addArray(intArr, intSize) << endl;
+    cout << "Sum of double array: " << addArray(doubleArr, doubleSize) << endl;
+
+    return 0;
+}

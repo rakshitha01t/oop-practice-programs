@@ -5,7 +5,6 @@ template <class T>
 class Calculator {
 private:
     T num1, num2;
-
 public:
     Calculator(T a, T b) {
         num1 = a;

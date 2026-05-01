@@ -1,0 +1,15 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ofstream out("a.txt");
+    out << "Hi";
+    out.close();
+
+    ifstream in("a.txt");
+    string s;
+    in >> s;
+    cout << s;
+    in.close();
+}

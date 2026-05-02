@@ -1,0 +1,15 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    fstream file("test.txt", ios::out);
+
+    file << "HelloWorld";
+
+    file.seekp(5);  
+    file << "XYZ";
+
+    file.close();
+    return 0;
+}

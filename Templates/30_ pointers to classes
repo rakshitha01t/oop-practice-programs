@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+public:
+    int length, breadth;
+
+    void getData(int l, int b) {
+        length = l;
+        breadth = b;
+    }
+
+    int area() {
+        return length * breadth;
+    }
+};
+
+int main() {
+    Rectangle *ptr;
+
+    ptr = new Rectangle();  
+
+    ptr->getData(10, 5);
+
+    cout << "Area: " << ptr->area() << endl;
+
+    delete ptr;   
+
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    fstream file("test.txt", ios::in);
+
+    file.seekg(5);  
+
+    char ch;
+    file >> ch;
+
+    cout << ch;
+
+    file.close();
+    return 0;
+}
